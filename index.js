@@ -140,13 +140,14 @@ function last(array, number){
 module.exports.last = last;
  
 /**
- * indexOf: Designed to return the index of an element from an array.
+ * indexOf: Designed to return the index number of the first instance the value 
+ * appears in the array.
  * 
  * @param {array} array: an array to iterate through
  * @param {any type} value: will find out the index spot of this value
  * 
- * @return {number}: the index spot of the value from the array, -1 if value is 
- * not in array.
+ * @return {number}: the index spot of the first appearance from the value of 
+ * the array, -1 if value is not in array.
  */ 
  
 function indexOf (array, value) {
@@ -198,7 +199,7 @@ module.exports.unique = unique;
 /**
  * filter: Designed to filter values from a collection based on a test function. Takes an array
  * and passes each value through a test function. The test function returns true if the value passes 
- * the test, otherwise false. Values that fail the test are returned in an output array.
+ * the test, otherwise false. Values that pass the test are returned in an output array.
  * 
  * @param {array} array: the array to filter through
  * @param {function} test: this function will test the values in the array and return
@@ -221,15 +222,15 @@ module.exports.unique = unique;
 module.exports.filter = filter;
 
 /**
- * reject: Designed to filter values from a collection based on a test function. 
+ * reject: Designed to iterate through an array and a logical function test
+ * evaluates the arguments. 
  * This is a logical inverse of the filter function. 
  * 
  * @param {array} array: the array to filter through
  * @param {functon} test: this function will test the values in the array and return
  * a boolean value based on the logic of the test
  * 
- * @return {array}: an array containing the filtered collection values that passed
- * the test.
+ * @return {array}: an array containing the values that failed the logical test.
  * 
  * */
 
